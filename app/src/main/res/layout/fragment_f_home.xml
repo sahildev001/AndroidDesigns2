@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    tools:context=".FHome">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+<!--        searchbox     Start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/bg_search_box"
+                android:gravity="center"
+                android:hint="FindJOBS"
+                android:padding="10dp"
+
+                android:textSize="18sp" />
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+
+             android:src="@drawable/ic_baseline_search_24"
+             android:padding="10dp"
+
+             android:background="@drawable/search_box_right"
+             />
+        </LinearLayout>
+<!--        SearchBoxEnd-->
+
+
+<!--      start  Popular service Button  see all-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Popular Services"
+                android:background="@drawable/search_box_right"
+                android:drawableRight="@drawable/ic_right_arrow_in_a_circle_outline"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="right"
+                android:textColor="#CAC4C4"
+                android:text="See All"/>
+
+        </LinearLayout>
+<!--      end  Popularservice Button see all-->
+
+<!--        Features gigs Start-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="10dp">
+
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/card_view"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+
+                app:cardCornerRadius="25dp">
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  >
+                  <ImageView
+                      android:id="@+id/img"
+                      android:layout_width="150dp"
+                      android:layout_height="180dp"
+                      android:scaleType="fitXY"
+                      android:src="@drawable/truck" />
+
+                  <Button
+                      android:layout_width="150dp"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentTop="true"
+                      android:layout_marginTop="153dp"
+                      android:background="@drawable/buttonbg"
+                      android:text="Logo Design"
+                      android:drawableRight="@drawable/ic_baseline_favorite_border_24"
+                      android:textSize="12sp"
+                      android:textStyle="bold" />
+              </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_toEndOf="@+id/card_view"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/card_view">
+
+                <androidx.cardview.widget.CardView
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="25dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/aststi1" />
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img1"
+                        android:layout_marginTop="-21dp"
+                        android:background="@drawable/buttonbg"
+                        android:text="Logo Animation"
+                        android:textSize="10dp" />
+
+
+                </RelativeLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp">
+
+                        <ImageView
+                            android:id="@+id/img2"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/artisti2" />
+
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img2"
+                            android:layout_marginTop="-21dp"
+                            android:background="@drawable/buttonbg"
+                            android:text="Photoshop Editing"
+                            android:textSize="10dp" />
+
+
+                    </RelativeLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Featured Gigs"
+                android:background="@drawable/search_box_right"
+                android:drawableRight="@drawable/ic_right_arrow_in_a_circle_outline"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="right"
+                android:textColor="#CAC4C4"
+                android:text="See All"/>
+
+
+        </LinearLayout>
+<!--        End Features gigs-->
+
+
+<!--        start featured gigs content-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="10dp">
+
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/card_view1"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+
+                app:cardCornerRadius="25dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:id="@+id/imgfg"
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/nike_blazer" />
+
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="153dp"
+                        android:background="@drawable/buttonbg"
+                        android:text="Create website"
+                        android:drawableRight="@drawable/ic_baseline_favorite_border_24"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_toEndOf="@+id/card_view1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/card_view1">
+
+                <androidx.cardview.widget.CardView
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    app:cardCornerRadius="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="105dp">
+
+                        <ImageView
+                            android:id="@+id/img4"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/aststi1" />
+
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img4"
+                            android:layout_marginTop="-21dp"
+                            android:background="@drawable/buttonbg"
+                            android:text="Develop ios and android apps"
+                            android:textSize="10dp" />
+
+
+                    </RelativeLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    app:cardCornerRadius="25dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="105dp">
+
+                        <ImageView
+                            android:id="@+id/img3"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/artisti2" />
+
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img3"
+                            android:layout_marginTop="-21dp"
+                            android:background="@drawable/buttonbg"
+                            android:text="Do start business card"
+                            android:textSize="10dp" />
+
+
+                    </RelativeLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+<!--        End Content Features Gigs-->
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+</FrameLayout>

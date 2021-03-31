@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:background="@drawable/background"
+
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/container_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbard"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/ic_baseline_menu_drawer"
+                    android:text="HOME"
+                    android:textSize="40sp"/>
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+        </LinearLayout>
+
+
+
+
+
+
+    <FrameLayout
+     android:layout_marginTop="?actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_height="600dp"
+        android:id="@+id/FLayout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/BottomNevigation"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/FLayout"
+
+        app:itemTextColor="@android:color/white"
+
+
+
+        app:menu="@menu/btm_menu"
+
+
+        />
+</RelativeLayout>
